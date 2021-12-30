@@ -4,7 +4,7 @@
 :root {
   --primaryfont: "Oleo Script Swash Caps", cursive;
   --secondfont: "Poppins", sans-serif;
-  --primarycolor: #326adb;
+  --primarycolor: #da0314;
   --secondcolor:#F0F2F5;
   --thirdcolor: #000000;
 }
@@ -39,6 +39,7 @@ input[type=text], select, textarea {
   /* resize: vertical; */
   border: none;
   border-bottom: 2px solid var(--primarycolor);
+  outline:none;
 }
 
 input[type=submit] {
