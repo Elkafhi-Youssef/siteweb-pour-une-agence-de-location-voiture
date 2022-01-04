@@ -1,0 +1,18 @@
+@import 'main';
+@media screen and (max-width:375px){
+    .section_gallery{
+        margin-top: -2px;
+        padding-top: 30px;
+        .title_line{
+           
+            .title_gallery{
+                width: 35%;
+                font-size: 18px;
+            }
+            .line1{
+                width: 65%;
+            }
+        }
+        
+    }
+}

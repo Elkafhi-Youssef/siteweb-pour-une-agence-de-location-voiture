@@ -1,0 +1,12 @@
+@import 'main';
+
+@media screen and (max-width:375px){
+    .container_footer{
+         
+        justify-content: center;
+        *{
+           
+            width: 60%;
+        }
+    }
+}

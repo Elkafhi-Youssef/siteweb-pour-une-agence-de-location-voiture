@@ -1,0 +1,90 @@
+@import 'main';
+.section_gallery{
+    background-color:  $third-color;
+
+    .title_line{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 50px;
+        .title_gallery{
+            font-size: 24px;
+            width: 13%;
+            font-family:$second-font;
+            color:$second-color;
+            font-weight: 100;  
+        }
+        
+        .line1{
+            height: 2px;
+            width: 87%;
+            background-color: $primary-color;
+        
+        }
+    }
+    .search-box{
+        // border: 2px solid red;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        form input {
+            width: 20rem;
+            padding: .7rem;
+            border: none;
+            border-radius: 5px;
+            outline: none;
+            font-size: 1rem;
+            border-bottom: 2px solid var(--color-sec);
+            margin-bottom: 1rem;
+        }
+    }
+    .filter-box{
+        margin-top: 20px;
+        
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-wrap: wrap;
+        .btn {
+            font-size: 1rem;
+            text-decoration: none;
+            color: #fff;
+            margin-right: 1rem;
+            background-color: $third-color;
+            padding: 5px;
+            border-radius: 3px;
+            &:active{
+                text-decoration: underline;
+            }
+        }
+        
+        .active {
+            background-color: $primary-color;
+        }
+    }
+    .gallery_container{
+        width: 95%;
+        display: flex; 
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        .gallery{
+            width: 350px ;
+            height: 250px;
+            margin: 10px;
+            border: 0.5px solid $second-color;
+            padding: 0;
+
+            img{
+                width: 100%;
+                height: 250px;
+                object-fit:fill;
+            }
+        }
+    }
+}
