@@ -524,6 +524,17 @@ body {
   margin-right: auto;
 }
 
+.mainn .reservation * {
+  font-family: "Poppins", sans-serif;
+}
+
+.mainn .reservation h1 {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  color: #da0314;
+  text-decoration: underline;
+}
+
 .form {
   margin-top: 30px;
   margin-left: auto;
