@@ -517,22 +517,55 @@ body {
   background-color: var(--secondcolor);
 }
 
-.mainn .reservation {
-  border: 2px solid #15ff00;
-  width: 57%;
-  margin-left: auto;
-  margin-right: auto;
+.header {
+  height: 130vh;
 }
 
-.mainn .reservation * {
+.header .mainn {
+  margin-bottom: 30px;
+}
+
+.header .mainn .reservation {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+  height: 100vh;
+}
+
+.header .mainn .reservation * {
   font-family: "Poppins", sans-serif;
 }
 
-.mainn .reservation h1 {
+.header .mainn .reservation h1 {
   font-family: "Poppins", sans-serif;
   text-align: center;
   color: #da0314;
   text-decoration: underline;
+}
+
+#biote_vitesse p {
+  background-color: rgba(87, 82, 82, 0.4);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 10px 15px;
+  padding: 6px;
+}
+
+.display_price {
+  border: .5px solid gray;
+  width: 0px;
+}
+
+.class1 {
+  padding: 0px;
+}
+
+.class {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .form {

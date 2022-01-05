@@ -4,6 +4,10 @@ const powerselect = document.querySelector('#power_select')
 const firstname = document.querySelector('#fname');
 const lastname = document.querySelector('#lname');
 const submit = document.querySelector('.submit');
+const price_dis = document.querySelector('.display_price .price_here')
+const displayPrice = document.querySelector('.display_price ')
+
+
 
 
 // const elec = document.querySelector('.electric_form')
@@ -17,11 +21,14 @@ console.log(firstname + " "+lastname)
 const tupeBoite =document.querySelector('#biote_vitesse')
 
 typeV.addEventListener('change',(e)=>{
+    price_dis.style.display = 'none'
+    displayPrice.classList.add("class1");
     const typeValue = typeV.value;
     const numbersday =numbersDay.value;
     arr[6]=firstname.value
     arr[7]=lastname.value
     arr[3]=numbersday;
+    arr[2]=0
     switch(typeValue){
         case'moto':
         arr[0]="moto"
@@ -90,7 +97,7 @@ typeV.addEventListener('change',(e)=>{
         arr[2]=arr[1]*arr[3]
         arr[4]="Manuelle"
         tupeBoite.innerHTML = `<h4>boite vitesse</h4><p>Manuelle</p>`;
-        power.innerHTML = `
+        powerselect.innerHTML = `
         <option  selected>chosse....</option>
 
         <option value="diesel">Diesel</option>
@@ -142,16 +149,16 @@ function getPower(){
     console.log(powerselect.value);
     arr[5]=powerselect.value
     if(arr[5]=="electric"){
-        arr[2]=arr[2]+0.05
+        arr[2]=arr[2]+(0.05*arr[2] )
     }else if(arr[5]=="essence"){
-        arr[2]=arr[2]+0.14 
+        arr[2]=arr[2]+(0.14 *arr[2] )
     }else if(arr[5]=="hybride"){
-        arr[2]=arr[2]+0.09 
+        arr[2]=arr[2]+(0.09 *arr[2] ) 
     }else if(arr[5]=="diesel"){
-        arr[2]=arr[2]+0.21
+        arr[2]=arr[2]+(0.21 *arr[2] ) 
     }
     if(arr[4]=="Automatique"){
-        arr[2]=arr[2]+0.19
+        arr[2]=arr[2]+(0.19 *arr[2] ) 
     }
 console.log(arr)
 
@@ -161,7 +168,11 @@ console.log(arr)
    
 
 submit.addEventListener('click',(e)=>{
-    alert(`name:${arr[6]}${arr[7]}\n type vihecule:${arr[0]}`)
+    price_dis.style.display = 'block'
+
+    price_dis.textContent= ` Price ${arr[2]} $`
+    displayPrice.classList.add("class");
+    // alert(`name:${arr[6]}${arr[7]}\n type vihecule:${arr[0]}`)
 })
 
 

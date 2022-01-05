@@ -1,26 +1,63 @@
 @import 'main';
-.mainn{
+.header{
+  height: 130vh;
+  .mainn{
+    
+    margin-bottom: 30px;
     .reservation{
-        border: 2px solid rgb(21, 255, 0);
-        width: 57%;
-        margin-left: auto;
-        margin-right: auto;
-        *{
-          font-family: $second-font;
-        }
-        h1{
-          font-family: $second-font;
-          text-align: center;
-          color: $primary-color;
-          text-decoration: underline;
-        }
+      
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 40px;
+      height: 100vh;
+      *{
+        font-family: $second-font;
+      }
+      h1{
+        font-family: $second-font;
+        text-align: center;
+        color: $primary-color;
+        text-decoration: underline;
+      }
+      // .container_form{
+      //   form{
+      //     #biote_vitesse{
+      //       border: 2px solid red;
+
+      //       p{
+      //         width: 100px;
+      //         border: 2px solid red;
+      //       }
+      //     }
+      //   }
+      // }
     }
 }
+}
 
+#biote_vitesse {
 
-
+p{
+  background-color: rgba(87, 82, 82, 0.4);
+  width: fit-content;
+  margin: 10px 15px;
+  padding: 6px;
+}
+}
+ .display_price{
+  border: .5px solid gray;
+  width: 0px;
+  
+}
+.class1{
+  padding: 0px;
+}
+.class{
+  width:fit-content ;
+}
 .form{
-    margin-top: 30px;
+  margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
     
